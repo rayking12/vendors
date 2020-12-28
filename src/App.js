@@ -1,25 +1,28 @@
-import logo from './logo.svg';
+import React from 'react';
 import './App.css';
+import Header from './component/Home-page/vendors';
+import HomePage from './component/vendor-homepage/vendor-homepage';
+import {BrowserRouter as Router, Switch, Route, Link, withRouter} from  'react-router-dom';
+import Home from '../src/component/Home/home';
+import ProductUpload from '../src/component/Uploads/productUpload'
+import Regpage from './component/Registration-page/Reg-page'
 
-function App() {
+
+const  Vendor = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Header />
+    <Router>
+      <div>
+      <Switch>
+      <Route path='/' exact component={Regpage} />
+      <Route path='/home' exact component={Home} />
+      <Route path='/productUpload' exact component={ProductUpload} />
+      </Switch>
+      </div>
+    </Router>
+    </>
   );
 }
 
-export default App;
+export default withRouter(Vendor);
