@@ -204,8 +204,8 @@ handleNewChange(event) {
                 <label>Brief Brand </label>
                 <textarea className="brief-div" required></textarea>
               </div>
-              <div >
-                <button type="Submit" className='Button'> Register Now</button>
+              <div className='Button'>
+                <button type="Submit" > Register Now</button>
               </div>
             </form>
           </div>

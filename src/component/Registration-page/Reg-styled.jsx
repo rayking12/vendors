@@ -167,10 +167,14 @@ export const RegStyle = styled.section`
     font-size: 15px;
   }
   .Button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .Button button {
     color: white;
     background: black;
-margin-left: 200px;;
-position: static;
 padding:1.3rem;
 border-radius: 26px;
 border: none;
@@ -195,8 +199,16 @@ border: none;
       font-size: 18px;
     }
   }
+  @media (min-width: 1025px)  {
+    .Button button {
+      margin-left: 13rem;
+      position:static;
+    }
+  }
   @media (min-width: 600px) and (max-width: 1024px) {
-    .Svg-div {
+    .div-form {
+      display: flex;
+      flex-direction: column;
     }
   }
 `;
