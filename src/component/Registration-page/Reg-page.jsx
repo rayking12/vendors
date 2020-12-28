@@ -133,7 +133,7 @@ handleNewChange(event) {
                   name="fullName"
                   required
                   />
-          {this.state.errors.fullName.length < 5 && (
+          {this.state.errors.fullName.length < 5 &&  (
       <span className="error">{this.state.errors.fullName}</span>
       )}
               </div>
@@ -204,8 +204,8 @@ handleNewChange(event) {
                 <label>Brief Brand </label>
                 <textarea className="brief-div" required></textarea>
               </div>
-              <div>
-                <button type="Submit"> Register Now</button>
+              <div >
+                <button type="Submit" className='Button'> Register Now</button>
               </div>
             </form>
           </div>

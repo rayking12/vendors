@@ -82,7 +82,7 @@ export const RegStyle = styled.section`
     align-items: center;
     margin-top: 60px;
   }
-  
+
   .First-svg {
     position: absolute;
     width: 241px;
@@ -90,9 +90,9 @@ export const RegStyle = styled.section`
   }
 
   .Second-div {
-  position: absolute;
-  width: 134px;
-  height: 138px;
+    position: absolute;
+    width: 134px;
+    height: 138px;
   }
 
   .form-div {
@@ -105,8 +105,7 @@ export const RegStyle = styled.section`
     margin-top: 70px;
     margin-bottom: 50px;
     padding-bottom: 50px;
-    color: #F3F2F0;
-
+    color: #f3f2f0;
   }
   .form-div p {
     font-family: made-tommy;
@@ -132,7 +131,7 @@ export const RegStyle = styled.section`
   .form-divs label {
     text-align: start;
     margin-left: 8px;
-    }
+  }
 
   .form-divs input {
     border-radius: 16px;
@@ -151,22 +150,30 @@ export const RegStyle = styled.section`
     justify-content: center;
   }
   .brief-div {
-  height: 300px;
-  width: 76%;
-  padding: 1rem;
-    
-    background: #FFFFFF;
+    height: 300px;
+    width: 76%;
+    padding: 1rem;
+
+    background: #ffffff;
     /* Primary / 1 */
-    border: 2px solid #BDBDBD;
+    border: 2px solid #bdbdbd;
     box-sizing: border-box;
     border-radius: 26px;
-    
   }
   .error {
     font-weight: italics;
     color: #f42828;
     text-align: start;
     font-size: 15px;
+  }
+  .Button {
+    color: white;
+    background: black;
+margin-left: 200px;;
+position: static;
+padding:1.3rem;
+border-radius: 26px;
+border: none;
   }
   @media (max-width: 600px) {
     .Reg-div {
@@ -191,6 +198,5 @@ export const RegStyle = styled.section`
   @media (min-width: 600px) and (max-width: 1024px) {
     .Svg-div {
     }
-    
   }
 `;
