@@ -27,7 +27,7 @@ export const HomeStyled = styled.section `
     height:89px;
     background: #FFFFFF;
     border-radius: 50px;
-    font-size: 30px;
+    font-size: 27px;
     font-weight: 700;
     border: none
    }
@@ -60,7 +60,10 @@ background: #FEF5FF;
 }
 @media (max-width: 600px) {
     .Button {
-        margin: 18px;
+        margin: 5px;
+    }
+    .Button-div {
+       width: 15rem; 
     }
     .Footer-div {
         margin: 10px;
