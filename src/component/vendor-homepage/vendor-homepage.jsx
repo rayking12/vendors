@@ -35,11 +35,10 @@ const Homepage = ( props ) => {
             <button className="Button-div">My Product</button>
           </div>
           <div className="Footer-div">
-            <Footer />
+      <Footer />
           </div>
       </div>
       </div>
-
     </HomeStyled>
   );
 };

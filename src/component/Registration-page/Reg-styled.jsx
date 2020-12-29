@@ -139,26 +139,32 @@ export const RegStyle = styled.section`
     border: 2px solid #bdbdbd;
     padding-left: 1em;
   }
-  .form-divs input [placeholder] {
-    margin-right: 500px;
+  .Sex-div {
+    display: block;
+  }
+  .Sex-div label {
+    margin-right: 1rem;
+  }
+  .Sex-div input {
+    margin-left: 1rem;
   }
 
-  .Sex-div label {
+  .Sex-div p {
+    text-align: start;
+    margin-left: 2.4rem;
+    font-size: 18px;
+    font-weight: bold;
   }
   .form-label {
     display: flex;
     justify-content: center;
   }
   .brief-div {
-    height: 300px;
-    width: 76%;
-    padding: 1rem;
+   border-radius : 26px;
+   height: 11rem;
+   padding: 1rem;
 
-    background: #ffffff;
-    /* Primary / 1 */
-    border: 2px solid #bdbdbd;
-    box-sizing: border-box;
-    border-radius: 26px;
+
   }
   .error {
     font-weight: italics;

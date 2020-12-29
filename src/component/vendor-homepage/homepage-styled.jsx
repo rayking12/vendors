@@ -58,6 +58,14 @@ background: #FEF5FF;
 .Footer-div {
     margin: 120px;
 }
+@media (max-width: 600px) {
+    .Button {
+        margin: 18px;
+    }
+    .Footer-div {
+        margin: 10px;
+    }
+}
 
 
 `

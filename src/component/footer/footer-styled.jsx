@@ -82,11 +82,15 @@ export const FooterStyled = style.footer`
 }
 
 .Footer .Socials {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .Footer .Socials > img {
-    margin-top: 2.5rem;
-    margin-left: 7rem;
+    margin-top: 1rem;
+    width: 9rem;
 }
 .Footer .Socials .Nav {
     margin-top: 1.5rem;
