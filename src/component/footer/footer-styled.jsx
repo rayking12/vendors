@@ -10,7 +10,7 @@ export const FooterStyled = style.footer`
   }
   
   .searchTerm {
-    width: 80%;
+    width: 90%;
     border-right: none;
     padding: 8px;
     height: 20px;
@@ -90,12 +90,13 @@ export const FooterStyled = style.footer`
 
 .Footer .Socials > img {
     margin-top: 1rem;
-    width: 9rem;
+    width: 8rem;
 }
 .Footer .Socials .Nav {
     margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
+    margin-right: 1.7rem;
 }
 
 // medium screen
