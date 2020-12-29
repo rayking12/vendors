@@ -96,7 +96,7 @@ export const FooterStyled = style.footer`
     margin-top: 1.5rem;
     display: flex;
     flex-direction: row;
-    margin-right: 1.7rem;
+    margin-right: 2.2rem;
 }
 
 // medium screen
