@@ -74,7 +74,9 @@ const ProductStyled = styled.section`
     .mainForm {
       display: flex;
       flex-direction: column;
-
+      justify-content: center;
+      align-items: center;
+      text-align: center;
     }
     .file-upload input {
       width: 6rem;
@@ -99,6 +101,11 @@ const ProductStyled = styled.section`
     }
     .productForm {
       text-align: center;
+    }
+    .file-upload {
+      display: flex;
+      flex-direction: column;
+     
     }
   }
 `;
