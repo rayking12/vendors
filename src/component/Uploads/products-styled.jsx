@@ -20,6 +20,7 @@ const ProductStyled = styled.section`
   .mainForm {
     display: grid;
     grid-template-columns: 1fr 2fr;
+    color: #BDBDBD;
   }
 
   .file-upload {
