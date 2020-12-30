@@ -37,7 +37,7 @@ class productUpload extends React.Component {
     let $imagePreview = null;
     if (imagePreviewUrl) {
       $imagePreview = (
-        <img src={imagePreviewUrl} width="100%" className="img-preview" />
+        <img src={imagePreviewUrl}  width="100%" className="img-preview" />
       );
     } else {
       $imagePreview = <div className="previewText"> Image</div>;
@@ -65,8 +65,8 @@ class productUpload extends React.Component {
             <div className="file-upload">
               <form onSubmit={(e) => this._handleSubmit(e)}></form>
               <input type="file" onChange={(e) => this._handleImageChange(e)} />
-              <div className="imgPreview">{$imagePreview}</div>
-              <p>Product upload image</p>
+              <div className="imgPreview" >{$imagePreview}</div>
+              <p >Product upload image</p>
             </div>
         
                 <div className="productForm">
