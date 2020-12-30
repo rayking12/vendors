@@ -33,7 +33,7 @@ const ProductStyled = styled.section`
     position: absolute;
     width: 15rem;
     height: 8rem;
-    object-fit: contain;
+    object-fit: cover;
     top: 12rem;
     left: 4.4rem;
     z-index: 1;
@@ -101,6 +101,9 @@ const ProductStyled = styled.section`
       justify-content: center;
       align-items: center;
       text-align: center;
+    }
+    .main-div {
+      margin-left:0.1rem;
     }
     .file-upload input {
       width: 6rem;
