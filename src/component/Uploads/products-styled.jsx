@@ -32,7 +32,7 @@ const ProductStyled = styled.section`
   .img-preview {
     position: absolute;
     width: 15rem;
-    height: 10rem;
+    height: 8rem;
     object-fit: contain;
     top: 12rem;
     left: 4.4rem;
@@ -62,6 +62,7 @@ const ProductStyled = styled.section`
     padding: 1rem;
     margin: 20px 20px;
   }
+  
   .buttonDiv {
     display: flex;
     flex-direction: column;
@@ -132,13 +133,19 @@ const ProductStyled = styled.section`
     }
     .button {
       position: sticky;
-      margin-left: 8.5rem;
+      margin-left: 7.6rem;
     }
     .buttonDiv {
-      width: 70%;
+      width: 80%;
     }
     .productButton {
-      margin-left: 9rem;
+      margin-left: 8rem;
+    }
+    .file-upload p {
+      margin-top: 8rem;
+    }
+    .productForm p {
+      margin-top: 100px;
     }
   }
 `;

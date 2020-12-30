@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "../Home-page/vendors";
 import ProductStyled from "./products-styled";
+import { Link, withRouter } from "react-router-dom";
 import Footer from "../footer/footer";
 
 class productUpload extends React.Component {
@@ -14,6 +15,8 @@ class productUpload extends React.Component {
   _handleSubmit(e) {
     e.preventDefault();
     console.log("handle uploading-", this.state.file);
+    alert('Your Product has been registered');
+    this.props.history.push("/myProducts")
   }
 
   _handleImageChange(e) {
@@ -70,7 +73,7 @@ class productUpload extends React.Component {
             </div>
         
                 <div className="productForm">
-              <form>
+              <form onSubmit={(e) => this._handleSubmit(e)}>
                   <p>Product Description</p>
                   <input type="text" placeholder="Product name" required/>
                   <input type="text" placeholder="Product Model" required/>
@@ -79,7 +82,7 @@ class productUpload extends React.Component {
                   <input type="text" placeholder="Product Category" required/>
                   <input placeholder="Product Description/Review" className='descriptionText' required/>
                   <div className='buttonDiv'>
-                  <button type="ubmit"className='button'>Upload Product</button>
+                  <button type="submit"className='button'>Upload Product</button>
                   <button className='productButton'>My Products</button>
                   </div>
               </form>
@@ -91,4 +94,4 @@ class productUpload extends React.Component {
     );
   }
 }
-export default productUpload;
+export default withRouter(productUpload);
