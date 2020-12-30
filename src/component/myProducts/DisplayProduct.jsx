@@ -1,21 +1,24 @@
-import { render } from "@testing-library/react";
-import React from "react";
-import myProductsStyled from './myProducts-styled';
-import VendorUsers from './VendorUsers';
-import Footer from '../footer/footer';
+import React from 'react';
 
+class DisplayProduct extends React.Component {
+constructor(props) {
+    super(props)
+    this.state = {
+        count: 0
+    }
+}
 
+decrement = (e) => {
+    this.setState({count: this.state.count - 1} )
+}
+increment = (e) => {
+    this.setState({count: this.state.count + 1})
+}
 
- class myProducts extends React.Component {
-  constructor(props) {
-    super(props);
-  }
-
-  render() {
-    return (
-        <myProductsStyled>
+render () {
+    return(
         <div>
-        <div className='pt-5 d-flex justify-content-between m-2 mainDiv'>
+            <div className='pt-5 d-flex justify-content-between m-2 mainDiv'>
             <h1 className="m-4">My Products</h1>
              <div className="d-flex m-4"> 
             <h1>Jack Hanniel</h1>
@@ -31,16 +34,14 @@ import Footer from '../footer/footer';
                 fill="#320234"
                 />
             </svg>
+            </div>
         </div>
-                </div>
-                <div>
-                    <VendorUsers />
-                    <VendorUsers />
-                </div>
-      </div>
-      <Footer />
-                </myProductsStyled>
-    );
-  }
+        <div>
+
+        </div>
+        </div>
+    )
 }
-export default myProducts;
+};
+
+export default DisplayProduct;

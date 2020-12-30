@@ -10,7 +10,7 @@ const Header = () => {
                 </a>
             </div>
             <div className="Brand">
-                <a href="/">                    <img src="/img/logo.svg" alt="3reenshop logo" />
+                <a href="/"><img src="/img/logo.svg" alt="3reenshop logo" />
 
                 </a>
             </div>
