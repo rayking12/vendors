@@ -59,6 +59,26 @@ const ProductStyled = styled.section`
     padding: 1rem;
     margin: 20px 20px;
   }
+  .buttonDiv {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+  }
+
+  .button {
+    background: rgba(0, 0, 0, 0.87);
+    border-radius: 50px;
+    border: none;
+    color: white;
+    padding: 0.7rem;
+    margin: 0.5rem;
+  }
+  .productButton {
+    color: #BDBDBD;
+    background: none;
+    border: none;
+    position: sticky;
+  }
   .productForm textarea {
     border: 2px solid #bdbdbd;
     box-sizing: border-box;
@@ -106,6 +126,16 @@ const ProductStyled = styled.section`
       display: flex;
       flex-direction: column;
      
+    }
+    .button {
+      position: sticky;
+      margin-left: 8.5rem;
+    }
+    .buttonDiv {
+      width: 70%;
+    }
+    .productButton {
+      margin-left: 9rem;
     }
   }
 `;

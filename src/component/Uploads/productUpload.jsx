@@ -78,8 +78,10 @@ class productUpload extends React.Component {
                   <input type="text" placeholder="Product Category" />
                   <input type="text" placeholder="Product Category" />
                   <input placeholder="Product Description/Review" className='descriptionText' />
-                  <button>Upload Product</button>
-                  <a>My Products</a>
+                  <div className='buttonDiv'>
+                  <button className='button'>Upload Product</button>
+                  <button className='productButton'>My Products</button>
+                  </div>
               </form>
             </div>
           </div>
