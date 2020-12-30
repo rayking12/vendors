@@ -14,6 +14,7 @@ const ProductStyled = styled.section`
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
+
   .file-upload {
 
     max-width: 60%;
@@ -24,10 +25,10 @@ const ProductStyled = styled.section`
 
   .img-preview {
     position: absolute;
-    width: 17rem;
+    width: 15rem;
     height: auto;
-    top: 12.8rem;
-    left: 8rem;
+    top: 12.4rem;
+    left: 7.5rem;
   }
   .file-upload {
     display: flex;
@@ -62,5 +63,14 @@ const ProductStyled = styled.section`
     height: 14rem;
     padding: 1rem;
   }
-`;
+  @media ( max-width: 600px) {
+    .mainForm {
+      display: flex;
+      flex-direction: column;
+    }
+    .file-upload input {
+      width: 6rem;
+    }
+  } 
+  ` ;
 export default ProductStyled;
