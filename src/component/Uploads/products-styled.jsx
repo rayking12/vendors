@@ -15,7 +15,7 @@ const ProductStyled = styled.section`
 
   .main-div {
     padding-top: 4.8rem;
-    margin-left: 7rem;
+    text-align: 
   }
   .mainForm {
     display: grid;
