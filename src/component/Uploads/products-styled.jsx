@@ -5,7 +5,15 @@ const ProductStyled = styled.section`
     display: flex;
     justify-content: flex-end;
     margin-right: 3rem;
+    color: #320234;
+   
   }
+  .product-div svg {
+   margin-left: 1rem;
+   width: 53px;
+   height: 54px;
+  }
+
   .main-div {
     padding-top: 4.8rem;
     margin-left: 7rem;
@@ -70,6 +78,15 @@ const ProductStyled = styled.section`
     }
     .file-upload input {
       width: 6rem;
+    }
+    .product-div {
+      font-size : 13px; 
+      margin-right: 2rem;
+    }
+    .product-div svg {
+      width: 45px;
+      margin-left: 0.5rem;
+
     }
   } 
   ` ;
