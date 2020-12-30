@@ -32,7 +32,9 @@ const Homepage = ( props ) => {
             </Link>
           </div>
           <div className='Button'>
+            <Link to ="/myProducts">
             <button className="Button-div">My Product</button>
+            </Link>
           </div>
           <div className="Footer-div">
       <Footer />
