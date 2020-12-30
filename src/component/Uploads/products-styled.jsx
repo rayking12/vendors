@@ -15,7 +15,7 @@ const ProductStyled = styled.section`
 
   .main-div {
     padding-top: 4.8rem;
-    text-align: 
+    margin-left: 3.5rem;
   }
   .mainForm {
     display: grid;
@@ -32,10 +32,10 @@ const ProductStyled = styled.section`
   .img-preview {
     position: absolute;
     width: 15rem;
-    height: 7rem;
-    object-fit: cover;
-    top: 12.4rem;
-    left: 7.5rem;
+    height: 10rem;
+    object-fit: contain;
+    top: 12rem;
+    left: 4.4rem;
     z-index: 1;
   }
   .file-upload {
@@ -46,11 +46,14 @@ const ProductStyled = styled.section`
   }
   .file-upload input {
     position: absolute;
-    background: #c4c4c4;
-    width: 7rem;
-    height: 5rem;
+    width: 15rem;
+    height: 4rem;
     border: none;
     padding: 3rem;
+  }
+  .file-upload p {
+    position: absolute;
+    margin-top: 10.2rem;
   }
   .productForm input {
     border: 2px solid #bdbdbd;
@@ -112,7 +115,7 @@ const ProductStyled = styled.section`
     .img-preview {
       width: 11rem;
       top: 10rem;
-      left: 7rem;
+      left: 9rem;
     }
     .file-upload input {
       position: relative;

@@ -64,7 +64,7 @@ class productUpload extends React.Component {
           <div className="mainForm">
             <div className="file-upload">
               <form onSubmit={(e) => this._handleSubmit(e)}></form>
-              <input type="file" onChange={(e) => this._handleImageChange(e)} />
+              <input type="file" onChange={(e) => this._handleImageChange(e)} required/>
               <div className="imgPreview" >{$imagePreview}</div>
               <p >Product upload image</p>
             </div>
@@ -72,14 +72,14 @@ class productUpload extends React.Component {
                 <div className="productForm">
               <form>
                   <p>Product Description</p>
-                  <input type="text" placeholder="Product name" />
-                  <input type="text" placeholder="Product Model" />
-                  <input type="text" placeholder="Product Price" />
-                  <input type="text" placeholder="Product Category" />
-                  <input type="text" placeholder="Product Category" />
-                  <input placeholder="Product Description/Review" className='descriptionText' />
+                  <input type="text" placeholder="Product name" required/>
+                  <input type="text" placeholder="Product Model" required/>
+                  <input type="text" placeholder="Product Price" required/>
+                  <input type="text" placeholder="Product Category" required/>
+                  <input type="text" placeholder="Product Category" required/>
+                  <input placeholder="Product Description/Review" className='descriptionText' required/>
                   <div className='buttonDiv'>
-                  <button className='button'>Upload Product</button>
+                  <button type="ubmit"className='button'>Upload Product</button>
                   <button className='productButton'>My Products</button>
                   </div>
               </form>
