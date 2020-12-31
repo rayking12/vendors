@@ -1,13 +1,12 @@
 import React from 'react';
 
-const DisplayDummy = () => {
+const DisplayDummy = ( { displayDummy }) => {
     return (
         <div>
             <div className='imgDiv'>
           <img
             className=""
-           
-            alt=""
+            alt={displayDummy}
             />
 
         </div>

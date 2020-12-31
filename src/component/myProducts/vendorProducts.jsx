@@ -1,8 +1,9 @@
 import React from "react";
-import VendorProductStyled from './vendorProductStyled'
-import { Link } from 'react-router-dom'
+import VendorProductStyled from './vendorProductStyled';
+import { Link,withRouter } from 'react-router-dom';
+import DisplayDummy from './displaydummy';
 
-const VendorProducts = ({ vendorProducts }) => {
+const VendorProducts = ({ vendorProducts, product, history, match }) => {
   return (
       <VendorProductStyled>
     <div >
@@ -13,12 +14,11 @@ const VendorProducts = ({ vendorProducts }) => {
             src={vendorProducts.productImage}
             alt=""
             />
-
         </div>
-        <div >
-        <Link to='displayProduct' className='FirstDiv'>
-          <p>{vendorProducts.productName}</p>
 
+        <div >
+        <Link to={`${match.path}/${vendorProducts.productName}`} className='FirstDiv'>
+          <p>{vendorProducts.productName}</p>
           <span>Stock Left - {vendorProducts.StockLeft}</span>
           </Link>
         </div>
@@ -27,4 +27,4 @@ const VendorProducts = ({ vendorProducts }) => {
     </VendorProductStyled>
   );
 };
-export default VendorProducts;
+export default withRouter(VendorProducts);

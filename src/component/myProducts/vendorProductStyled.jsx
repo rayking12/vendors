@@ -16,6 +16,5 @@ text-decoration: none;
     outline:  none;
     underline: none;
 }
-
 `
 export default VendorProductStyled;

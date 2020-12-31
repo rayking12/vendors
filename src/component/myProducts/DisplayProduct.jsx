@@ -1,21 +1,13 @@
 import React from 'react';
 
-class DisplayProduct extends React.Component {
-constructor(props) {
-    super(props)
-    this.state = {
-        count: 0
-    }
-}
 
-decrement = (e) => {
-    this.setState({count: this.state.count - 1} )
-}
-increment = (e) => {
-    this.setState({count: this.state.count + 1})
-}
-
-render () {
+const DisplayProduct = () => {
+// decrement = (e) => {
+//     this.setState({count: this.state.count - 1} )
+// }
+// increment = (e) => {
+//     this.setState({count: this.state.count + 1})
+// }
     return(
         <div>
             <div className='pt-5 d-flex justify-content-between m-2 mainDiv'>
@@ -42,6 +34,6 @@ render () {
         </div>
     )
 }
-};
+
 
 export default DisplayProduct;
